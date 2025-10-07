@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Nav() {
   return (
     <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-8 text-lg font-normal md:px-16">
@@ -11,7 +13,7 @@ export default function Nav() {
         <a href="#about" className="hover:bg-sand-100 border-sand-100 rounded-full border px-6 py-4">
           Über uns
         </a>
-        <a href="#about" className="hover:bg-sand-100 border-sand-100 rounded-full border px-6 py-4">
+        <a href="#support" className="hover:bg-sand-100 border-sand-100 rounded-full border px-6 py-4">
           Für Helfende
         </a>
       </div>

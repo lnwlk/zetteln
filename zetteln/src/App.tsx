@@ -1,18 +1,17 @@
-import About from './components/about'
-import AppFeature from './components/AppFeature'
-import Intro from './components/Intro'
+import { Route, Routes } from 'react-router-dom'
 import Nav from './components/Nav'
-import Partner from './components/Partner'
-import { sections } from './Section'
+import HomePage from './pages/HomePage'
+import ImprintPage from './pages/ImprintPage'
 
 export default function App() {
   return (
     <div className="bg-sand-50 text-black-800 relative text-lg font-light">
       <Nav />
-      <Intro />
-      <AppFeature sections={sections} />
-      <About />
-      <Partner />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/imprint" element={<ImprintPage />} />
+      </Routes>
     </div>
   )
 }
