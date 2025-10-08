@@ -2,8 +2,8 @@ import ArrowRight from '../assets/icons/ArrowRight'
 
 export default function Partner() {
   return (
-    <div className="mx-auto flex max-w-7xl flex-col rounded-4xl bg-blue-900 py-16 text-white md:flex-row md:items-end">
-      <div className="px-4 text-xl md:w-1/2 md:px-8 md:pt-16">
+    <div className="mx-auto flex max-w-7xl flex-col rounded-4xl bg-blue-900 py-8 text-white md:flex-row md:items-center">
+      <div className="h-full px-4 text-xl md:w-1/2 md:px-8">
         <h2 className="pb-8 text-4xl">Gemeinsam mit euch wirkungsvoll unterstützen</h2>
         <p>
           Du bist Teil einer Beratungsstelle, eines Vereins oder einer Initiative, die Menschen im Behördenalltag

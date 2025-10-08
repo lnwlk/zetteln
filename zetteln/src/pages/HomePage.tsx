@@ -7,7 +7,7 @@ import { sections } from '../Section'
 export default function HomePage() {
   return (
     <>
-      <section>
+      <section className="w-full">
         <Intro />
       </section>
       <section id="features">

@@ -1,7 +1,7 @@
-export default function HomePage() {
+export default function ImprintPage() {
   return (
     <>
-      <h1>Impressum</h1>
+      <h1 className="text-5xl">Impressum</h1>
     </>
   )
 }
