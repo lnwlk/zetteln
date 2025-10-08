@@ -2,8 +2,8 @@ import ArrowRight from '../assets/icons/ArrowRight'
 
 export default function About() {
   return (
-    <div className="to-sand-50 via-sand-100 from-sand-50 mx-auto mt-8 flex max-w-7xl flex-col rounded-4xl bg-gradient-to-b md:mt-24">
-      <div className="px-4 pt-8 pb-8 text-xl md:w-2/3 md:px-8 md:pt-16">
+    <div className="to-sand-50 via-sand-100 from-sand-50 bg-gradient-to-b">
+      <div className="mx-auto flex max-w-7xl flex-col rounded-4xl px-4 text-xl md:mt-24 md:w-2/3 md:px-8 md:py-16">
         <h2 className="pb-8 text-4xl">Über uns</h2>
         <p>
           zetteln.app ist aus purem Frust über den Behördenwahnsinn entstanden. Als freiberufliche Designerin und

@@ -1,16 +1,19 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import GetAppModal from './GetAppModal'
+import ArrowRight from '../assets/icons/ArrowRight'
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <div className="absolute top-0 w-full">
+    <div className="absolute top-0 z-50 w-full">
       <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-6 text-lg font-normal md:px-16">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <Link to="/" className="text-xl font-semibold">
+        <div className="flex w-24 items-center gap-2">
+          <Link
+            to="/"
+            className="text-xl font-semibold tracking-normal transition-all duration-300 ease-in-out hover:tracking-widest"
+          >
             zetteln
           </Link>
         </div>
@@ -28,7 +31,12 @@ export default function Nav() {
         </div>
         {/* Desktop Button */}
         <div className="hidden md:block">
-          <GetAppModal />
+          <Link
+            to="/AppWaitlist"
+            className="bg-black-800 flex items-center gap-2 rounded-full px-6 py-3 text-white transition-all duration-200 hover:bg-black"
+          >
+            <ArrowRight /> App testen
+          </Link>
         </div>
         {/* Mobile Menu Button */}
         <button className="hover:bg-sand-100 rounded-md p-2 md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -60,15 +68,12 @@ export default function Nav() {
               <a href="#support" onClick={() => setIsOpen(false)} className="hover:text-sand-600">
                 Für Helfende
               </a>
-              <a
-                href="https://zetteln.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setIsOpen(false)}
-                className="rounded-full bg-black px-6 py-3 text-white hover:bg-black/80"
+              <Link
+                to="/AppWaitlist"
+                className="bg-black-800 flex items-center gap-2 rounded-full px-6 py-3 text-white transition-all duration-200 hover:bg-black"
               >
-                App testen
-              </a>
+                <ArrowRight /> App testen
+              </Link>
             </div>
           </div>
         )}
