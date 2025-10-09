@@ -10,14 +10,14 @@ export default function AppFeature() {
 
   return (
     <div className="mx-auto flex min-h-screen max-w-7xl flex-col md:flex-row md:items-center">
-      <div className="px-4 pt-24 pb-8 md:w-1/2 md:px-8 md:pt-16">
-        <h1 className="pb-4 text-5xl md:text-7xl">Endlich Behördenbriefe verstehen.</h1>
+      <div className="px-4 pt-24 text-5xl md:w-1/2 md:px-8 md:pt-16 md:text-7xl">
+        <h1>Endlich Behördenbriefe verstehen.</h1>
       </div>
 
       {/* Card container */}
       <div className="relative flex min-h-screen w-full flex-col items-center justify-center md:h-screen md:w-1/2">
         {/* Toggle Switch */}
-        <div className="absolute top-20 flex w-full items-center justify-center text-base md:pt-8">
+        <div className="absolute top-8 flex w-full items-center justify-center text-base md:top-20 md:pt-8">
           <div className="flex items-center gap-4">
             <span
               className={`flex w-32 items-center justify-end gap-2 font-serif transition-colors ${
@@ -51,7 +51,7 @@ export default function AppFeature() {
         {/* Card Behörde */}
         <div
           onMouseEnter={() => setTopDiv('initial')}
-          className={`absolute top-0 mt-32 h-3/4 w-[80%] rounded-4xl border bg-white transition duration-600 ease-in-out md:top-auto ${topDiv === 'initial' ? 'z-10 -translate-x-6 scale-100 border-gray-100 shadow-2xl' : 'z-0 -translate-x-14 scale-80 border-gray-300 bg-transparent'}`}
+          className={`absolute min-h-130 w-[80%] rounded-4xl border bg-white transition duration-600 ease-in-out md:mt-32 ${topDiv === 'initial' ? 'z-10 -translate-x-6 scale-100 border-gray-100 shadow-2xl' : 'z-0 -translate-x-14 scale-80 border-gray-300 bg-transparent'}`}
         >
           <div
             className={`px-4 py-8 transition delay-100 duration-300 ease-in-out md:px-8 md:py-16 ${topDiv === 'initial' ? 'opacity-100' : 'opacity-50'}`}
@@ -71,7 +71,7 @@ export default function AppFeature() {
         {/* Card Zetteln */}
         <div
           onMouseEnter={() => setTopDiv('morphed')}
-          className={`absolute mt-32 h-3/4 w-[80%] rounded-4xl border bg-white transition duration-600 ease-in-out md:top-auto ${topDiv === 'morphed' ? 'z-10 translate-x-6 scale-100 border-gray-100 shadow-2xl' : 'z-0 translate-x-14 scale-80 border-gray-300'}`}
+          className={`absolute min-h-130 w-[80%] rounded-4xl border bg-white transition duration-600 ease-in-out md:mt-32 ${topDiv === 'morphed' ? 'z-10 translate-x-6 scale-100 border-gray-100 shadow-2xl' : 'z-0 translate-x-14 scale-80 border-gray-300'}`}
         >
           <div
             className={`px-6 transition delay-100 duration-300 ease-in-out md:px-8 md:py-16 ${topDiv === 'morphed' ? 'opacity-100' : 'opacity-50'}`}

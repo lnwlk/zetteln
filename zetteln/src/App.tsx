@@ -4,7 +4,6 @@ import Nav from './components/Nav'
 import AppWaitlistPage from './pages/AppWaitlistPage'
 import HomePage from './pages/HomePage'
 import ImprintPage from './pages/ImprintPage'
-import PrivacyPage from './pages/PrivacyPage'
 
 export default function App() {
   return (
@@ -14,7 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/imprint" element={<ImprintPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
+
         <Route path="/AppWaitlist" element={<AppWaitlistPage />} />
       </Routes>
 

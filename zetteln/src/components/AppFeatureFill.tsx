@@ -26,7 +26,7 @@ export default function AppFeatureExplain({ id }: { id: string }) {
         </div>
         <div className="mt-16 flex aspect-square w-full items-center justify-center rounded-4xl bg-blue-300 p-4 md:order-1 md:w-1/2">
           <div className="flex flex-col items-center gap-2 rounded-4xl border border-white p-1">
-            <div className="flex h-160 items-center justify-center overflow-hidden rounded-4xl shadow-2xl">
+            <div className="flex h-160 shrink-1 items-center justify-center overflow-hidden rounded-4xl shadow-2xl">
               <VideoPlayer src="/videos/02_FormularFill.mp4" />
             </div>
           </div>

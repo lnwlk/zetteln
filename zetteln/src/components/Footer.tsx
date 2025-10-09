@@ -9,9 +9,8 @@ export default function Footer() {
             <a href="mailto:info@zetteln.app">info@zetteln.app</a>
           </li>
           <li>
-            <Link to={'/imprint'}>Impressum</Link>
+            <Link to={'/imprint'}>Impressum & Datenschutz</Link>
           </li>
-          <Link to={'/privacy'}>Datenschutz</Link>
         </ul>
       </div>
     </div>

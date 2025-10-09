@@ -25,8 +25,8 @@ export default function Partner() {
               Zusammen eine Lösung entwickeln, die wirklich hilft
             </li>
           </ul>
-          <div className="bg-black-800 rounded-full px-8 py-4 hover:bg-black">
-            <a href="mailto:lena@zetteln.app">Schreib uns</a>
+          <div className="bg-sand-100 text-black-800 hover:bg-sand-50 rounded-full px-8 py-4">
+            <a href="mailto:info@zetteln.app">Schreib uns</a>
           </div>
         </div>
       </div>
